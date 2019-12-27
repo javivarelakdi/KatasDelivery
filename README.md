@@ -14,3 +14,16 @@ function switcher(x){
   return word;
 }
 ```
+
+## Remove First and Last Character
+
+```
+function removeChar(str){
+   if(str.length > 2){
+    return str.slice(1, -1)
+   }
+   else{
+   return str
+   }
+};
+```
