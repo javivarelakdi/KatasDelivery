@@ -41,3 +41,16 @@ function getCount(str) {
   return vowelsCount;
 }
 ```
+
+## Sum Mixed Array
+
+```
+function sumMix (x){
+  let sum = 0
+  for(var i = 0; i < x.length; i++){
+    const parsed = parseInt(x[i])
+    sum += parsed;
+  }
+  return sum;
+}
+```
