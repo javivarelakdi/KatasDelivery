@@ -54,3 +54,22 @@ function sumMix (x){
   return sum;
 }
 ```
+
+## Count of positives / sum of negatives
+
+```
+function countPositivesSumNegatives(input){
+  let posCont = 0;
+  let negSum = 0;
+  if (input !== null){
+    for(var i = 0; i < input.length; i++){
+      if (input[i] <= 0){
+        negSum += input[i];
+      } else {
+        posCont += 1;
+      }
+    }
+  }
+  return (input !==null && input.length > 0) ? [posCont, negSum] : [];
+}
+```
