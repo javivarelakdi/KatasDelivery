@@ -135,3 +135,17 @@ var flatten = function (array){
   return [].concat.apply([], array);
 }
 ```
+
+## Square every digit
+
+```
+function squareDigits(num){
+  let numString = num.toString();
+  let newNumber = '';
+  for (i=0; i<numString.length; i++){
+    newNumber+=numString[i]*numString[i];
+    console.log(newNumber);
+  }
+  return parseInt(newNumber);
+}
+```
