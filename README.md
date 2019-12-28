@@ -120,10 +120,10 @@ function filter_list(l) {
 ```
 function maskify(cc) { 
   let maskedCc = '';
-  for (var i = 0; i < cc.Length - 4; i++){
+  for (let i = 0; i < cc.length - 4; i++){
     maskedCc += '#';
   } 
-  maskedCc += cc.substring(cc.Length - 4);
+  maskedCc += cc.substring(cc.length - 4);
   return maskedCc;
 }
 ```
