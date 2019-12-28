@@ -85,3 +85,17 @@ function getAverage(marks){
   return Math.floor(sum / marks.length);
 }
 ```
+
+## Find numbers which are divisible by given number
+
+```
+function divisibleBy(numbers, divisor){
+  let output = [];
+  for (let i = 0; i < numbers.length; i++){
+    if (numbers[i] % divisor === 0){
+      output.push(numbers[i]);
+    }
+  }
+  return output;
+}
+```
