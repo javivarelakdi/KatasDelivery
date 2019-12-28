@@ -114,3 +114,24 @@ function filter_list(l) {
   return newList;
 }
 ```
+
+## Maskify
+
+```
+function maskify(cc) { 
+  let maskedCc = '';
+  for (var i = 0; i < cc.Length - 4; i++){
+    maskedCc += '#';
+  } 
+  maskedCc += cc.substring(cc.Length - 4);
+  return maskedCc;
+}
+```
+
+## Flatten
+
+```
+var flatten = function (array){
+  return [].concat.apply([], array);
+}
+```
