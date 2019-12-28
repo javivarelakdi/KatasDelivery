@@ -73,3 +73,15 @@ function countPositivesSumNegatives(input){
   return (input !==null && input.length > 0) ? [posCont, negSum] : [];
 }
 ```
+
+## Get the mean of an array
+
+```
+function getAverage(marks){
+  let sum = 0;
+  for(var i = 0; i < marks.length; i++){
+    sum += marks[i];
+  }
+  return Math.floor(sum / marks.length);
+}
+```
